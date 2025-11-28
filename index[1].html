@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GreenHarvest — Healthy Foods & Products</title>
+  <meta name="description" content="GreenHarvest offers nutrient-dense whole foods, snacks, and wellbeing products delivered with care. Shop organic groceries, supplements, and sustainable goods." />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "GreenHarvest",
+    "url": "https://example.com",
+    "description": "Healthy foods, organic groceries, supplements and sustainable lifestyle products.",
+    "telephone": "+1-555-555-5555"
+  }
+  </script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="GreenHarvest home">
+        <img src="https://via.placeholder.com/40x40.png?text=GH" alt="GreenHarvest logo" />
+        <span>GreenHarvest</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prices.html">Prices</a></li>
+          <li><a href="groceries.html">Groceries</a></li>
+          <li><a href="snacks.html">Snacks</a></li>
+          <li><a href="supplements.html">Supplements</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="open-cart" class="btn-ghost" aria-label="Open cart">Cart (<span id="cart-count">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Fresh. Nourishing. Sustainable.</h1>
+          <p>Discover organic groceries, nutrient-dense snacks, natural supplements and eco-friendly products selected for your wellbeing.</p>
+          <p><a class="btn-primary" href="groceries.html">Shop Groceries</a> <a class="btn-ghost" href="snacks.html">Shop Snacks</a></p>
+        </div>
+        <div class="hero-image">
+          <img src="https://via.placeholder.com/900x560.png?text=Healthy+Harvest" alt="Assortment of healthy foods" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products-section container">
+      <div class="products-header">
+        <h2>Featured Products</h2>
+        <div class="filters" role="region" aria-label="Product filters">
+          <label class="sr-only" for="search">Search products</label>
+          <input id="search" type="search" placeholder="Search products..." aria-label="Search products" />
+
+          <label class="sr-only" for="category">Filter by category</label>
+          <select id="category" aria-label="Filter by category">
+            <option value="all">All categories</option>
+            <option value="groceries">Groceries</option>
+            <option value="snacks">Snacks</option>
+            <option value="supplements">Supplements</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="product-grid" class="product-grid" aria-live="polite">
+        <!-- Product cards rendered by script.js -->
+      </div>
+    </section>
+
+    <section id="why" class="container about">
+      <h2>Why GreenHarvest</h2>
+      <p>We believe food is medicine. Our carefully curated selection focuses on whole, minimally processed foods and ethically-made products that support health, planet, and community.</p>
+      <ul>
+        <li>Organic and minimally processed</li>
+        <li>Carefully sourced and tested</li>
+        <li>Low-waste and sustainable packaging options</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <form id="contact-form" action="#" method="post" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>GreenHarvest</strong>
+        <p>Organic foods & sustainable products</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="about.html#privacy">Privacy</a></li>
+          <li><a href="about.html#terms">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
